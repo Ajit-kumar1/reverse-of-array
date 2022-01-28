@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */  
+    
+    int a=0,b=1,s,i,l,k;
+    scanf("%d",&i);
+    s=a+b;
+  //  printf("%d\n",s);
+        for(k=1;k<=i;k++)
+        {
+            for(l=1;l<=k;l++)
+            { 
+                printf("%d ",s);
+                a=b;
+                b=s;
+                s=a+b;
+        }
+        printf("\n");
+    }
+    return 0;
+}
